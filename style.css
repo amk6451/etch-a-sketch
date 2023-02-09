@@ -9,16 +9,18 @@
   
   #container {
     display: grid;
-    /* grid-gap: 1em; */
-    /* grid-template-rows: auto;
-    grid-template-columns: auto; */
     grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);    
   }
-  
+
+
   .grid-item {
     padding: 1em;
     border: 1px solid black;
    /* text-align: center; */
+  }
+
+  .grid-item:hover{
+    background-color:grey;
   }
 
